@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .video{
+          text-align: center;
+          background-color: brown;
+          padding: 50px 0px;
+          border-bottom: 2px solid #dfdede;
+          width: 100%;
+          height: auto;
+      }
+
+
+      /* 4:3 16:9 */
+
+      iframe{
+          border-radius: 20px;
+          width: 640px;
+          height: 358.4px !important;
+          border: none;
+      }
+      .test{
+          width: 200px;
+          height: auto;
+          border: 3px solid black;
+      }
+
+      .video h1{
+          font-size: 40px;
+          color: #444444;
+          font-family: "Source Sans 3";
+      }
+
+      @media screen and (max-width: 700px) {
+          iframe{
+              width: 560px;
+              height: 313.6px;
+          }
+      }
+
+      @media screen and (max-width: 600px) {
+          iframe{
+              width: 460px;
+              height: 257.6px !important;
+          }
+      }
+
+      @media screen and (max-width: 500px) {
+          iframe{
+              width: 360px;
+              height: 201.6px !important;
+          }
+      }
+
+      @media screen and (max-width: 400px) {
+          iframe{
+              width: 300px;
+              height:168px !important;
+          }
+      }
+     
+    </style>
+  </head>
+  <body>
+    <section class="video">
+      <h1>Spin Up Reveal Video</h1>
+      <div class="video1">
+        <iframe
+          src="https://www.youtube.com/embed/lSGXzY2UG6c?si=gqKt-ISc492xs1VX"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+            
+    </section>
+  </body>
+</html>
